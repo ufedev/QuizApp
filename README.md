@@ -35,6 +35,36 @@ try {
 
 ```
 
+### Hay que configurar la ruta que va a usar tanto el front para las llamadas como el backend para ejecutarse
+```js
+//  src/constantes.jsx
+
+const URL = "192.168.1.46" // <-- Ruta  de llamadas para modificar
+
+export default URL
+
+```
+Luego de modificar ejecutar 
+
+```bash
+
+npm run dev:esbuild
+
+```
+
+### En el backen hay que modificar 
+
+```php
+// config/const.php
+
+<?php
+
+
+const URL = "192.168.1.46"; // <-- Misma ruta que en el front
+
+
+```
+
 ## Para correr el proyecto una vez realizado lo anterior
 
 **_Se requiere Componser y Node instalados en el sistema_**  
