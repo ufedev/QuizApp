@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:esbuild": "esbuild src/index.jsx --bundle --minify --jsx=automatic --outfile=js/out.js --watch",
-    "dev:php": "php -S localhost:8000 -t ./public"
+    "dev:php": "php -S localhost:8000 -t ./public",
+    "build": "esbuild src/index.jsx --bundle --minify --jsx=automatic --outfile=js/out.js"
   },
   "author": "Federico Malfasi <federico.malfasi@gmail.com>",
   "license": "MIT",
