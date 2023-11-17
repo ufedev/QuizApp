@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { MagicMotion } from "react-magic-motion"
 import { toast } from 'react-toastify'
 import QuizCardAdmin from "../components/QuizCardAdmin"
+import URL from "../contantes"
 const AllQuiz = () => {
 
     const [quizes, setQuizes] = useState([])
@@ -10,7 +11,7 @@ const AllQuiz = () => {
         const token = sessionStorage.getItem('jwt')
         try {
 
-            const url = `http://localhost:8000/api/quiz/all`
+            const url = `http://${URL}/api/quiz/all`
             const config = {
                 headers: {
                     'authorization': `Bearer + ${token}`,

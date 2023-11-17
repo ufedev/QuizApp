@@ -3,6 +3,8 @@ import { useState } from "react"
 import Form from '../components/forms/Form'
 import Field from '../components/forms/Field'
 import { toast } from "react-toastify"
+import URL from "../contantes"
+
 const LoginStudent = () => {
 
     const [username, setUsername] = useState("")
@@ -22,7 +24,7 @@ const LoginStudent = () => {
 
         try {
 
-            const url = "http://localhost:8000/api/login"
+            const url = `http://${URL}/api/login`
             const config = {
                 method: "POST",
                 headers: {

@@ -1,3 +1,4 @@
+import URL from "./contantes"
 import { createContext, useContext, useState, useEffect } from "react"
 import Spinner from "./components/Spinner"
 import { ToastContainer } from "react-toastify"
@@ -14,7 +15,7 @@ const Provider = ({ children }) => {
         try {
             setLoad(true)
             const token = sessionStorage.getItem('jwt')
-            const url = `http://localhost:8000/api/auth`
+            const url = `http://${URL}/api/auth`
             const config = {
                 headers: {
                     authorization: `Bearer ${token}`

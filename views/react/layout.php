@@ -1,3 +1,8 @@
+<?php
+
+include_once __DIR__ . "/../../config/const.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,10 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial</title>
-    <link rel="stylesheet" href="<?php echo "http://localhost:8000/styles" ?>" />
+    <link rel="stylesheet" href="<?php echo "http://" . URL . "/styles" ?>" />
     <script src="https://cdn.tailwindcss.com" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script type='module' src="<?php echo "http://localhost:8000/scripts" ?>" defer>
+    <script type='module' src="<?php echo "http://" . URL . "/scripts" ?>" defer>
     </script>
 </head>
 

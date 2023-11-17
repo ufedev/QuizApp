@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Student from "../components/Student"
+import URL from "../contantes"
 const AdminStudents = () => {
 
     const [students, setStudents] = useState([])
@@ -10,7 +11,7 @@ const AdminStudents = () => {
 
             const token = sessionStorage.getItem('jwt')
 
-            const url = `http://localhost:8000/api/students`
+            const url = `http://${URL}/api/students`
             const config = {
                 headers: {
                     authorization: `Bearer ${token}`

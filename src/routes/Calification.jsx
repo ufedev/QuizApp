@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { toast } from 'react-toastify'
+import URL from "../contantes"
 // import { useApp } from "../Context"
 const Calification = () => {
 
@@ -10,7 +11,7 @@ const Calification = () => {
 
     const handleAuth = async () => {
         try {
-            const url = `http://localhost:8000/api/auth`
+            const url = `http://${URL}/api/auth`
             const config = {
                 method: 'GET',
                 headers: {
@@ -34,7 +35,7 @@ const Calification = () => {
 
         try {
 
-            const url = `http://localhost:8000/api/getcalification`
+            const url = `http://${URL}/api/getcalification`
             const config = {
                 method: 'POST',
                 headers: {

@@ -1,3 +1,4 @@
+import URL from "../contantes"
 import { MagicMotion } from "react-magic-motion"
 import Form from "../components/forms/Form"
 import Field from "../components/forms/Field"
@@ -77,7 +78,7 @@ const QuizForm = () => {
 
             console.log(data)
             const token = sessionStorage.getItem('jwt')
-            const url = `http://localhost:8000/api/create/quiz`
+            const url = `http://${URL}/api/create/quiz`
             const config = {
                 method: "POST",
                 headers: {

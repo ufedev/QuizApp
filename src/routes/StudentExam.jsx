@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { toast } from "react-toastify"
 import { MagicMotion } from "react-magic-motion"
 import { useNavigate } from "react-router-dom"
+import URL from "../contantes"
 
 const Response = ({ response, quizIndex }) => {
     const { quizId, uid, ask } = response
@@ -39,7 +40,7 @@ const StudentExam = () => {
     const navigate = useNavigate()
     const getQuiz = async () => {
         try {
-            const url = `http://localhost:8000/api/quiz/all`
+            const url = `http://${URL}/api/quiz/all`
             const config = {
                 headers: {
                     'content-type': 'application/json'
@@ -90,7 +91,7 @@ const StudentExam = () => {
             return
         }
         try {
-            const url = 'http://localhost:8000/api/calification'
+            const url = `http://${URL}/api/calification`
             const config = {
                 method: 'POST',
                 headers: {
