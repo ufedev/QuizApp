@@ -1,0 +1,20 @@
+{
+    "name": "federicomalfasi/parcial_utn",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models",
+            "Controller\\": "./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "Federico Malfasi",
+            "email": "Federico.malfasi@gmail.com"
+        }
+    ],
+    "require": {
+        "ufedev/uff": "0.3.0",
+        "mongodb/mongodb": "^1.12",
+        "firebase/php-jwt": "^6.9"
+    }
+}
